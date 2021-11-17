@@ -35,7 +35,7 @@ To do this, need to set up a webhook:
 
 - Firstly, the settings in jenkins should be to use github
 
-- afte rhtat, it is as simple as setting up the webhook in the github settings for the repo
+- after that, it is as simple as setting up the webhook in the github settings for the repo
     - you can see the webhook in the settings on this repo (though the instance may be spun down by now
     - The URL to give is the jenkins server's, including port number. Then, add `/github-webhook/` to complete the address
 
@@ -48,3 +48,5 @@ To do this, this repo will gain a branch called `dev`, which we will get Jenkins
 We can then create a new job to merge the branches.
 
 `This code should be pushed to dev, but merged into main by Jenkins`
+
+HELLO JORDAN!
