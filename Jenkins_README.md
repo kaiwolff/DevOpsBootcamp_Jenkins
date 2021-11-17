@@ -47,4 +47,4 @@ To do this, this repo will gain a branch called `dev`, which we will get Jenkins
 
 We can then create a new job to merge the branches.
 
-`This code should be puisyhed to dev, but merged into main by Jenkins`
+`This code should be pushed to dev, but merged into main by Jenkins`
