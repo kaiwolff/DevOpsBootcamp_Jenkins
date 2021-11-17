@@ -36,5 +36,15 @@ To do this, need to set up a webhook:
 - Firstly, the settings in jenkins should be to use github
 
 - afte rhtat, it is as simple as setting up the webhook in the github settings for the repo
-    - you can see the webhook in the settings on this repo (though the instance may be spun down by now)
+    - you can see the webhook in the settings on this repo (though the instance may be spun down by now
+    - The URL to give is the jenkins server's, including port number. Then, add `/github-webhook/` to complete the address
 
+Basically, github will send a POST request to that location, triggering Jenkins to clone the repo and run a build.
+
+So now that this has been tested, a better practice would be to have Jenkins run tests and only merge the changes into main once they are passed.
+
+To do this, this repo will gain a branch called `dev`, which we will get Jenkins to listen to.
+
+We can then create a new job to merge the branches.
+
+`This code should be puisyhed to dev, but merged into main by Jenkins`
