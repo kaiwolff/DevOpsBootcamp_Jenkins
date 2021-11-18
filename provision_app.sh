@@ -33,7 +33,7 @@ sudo systemctl enable nginx
 
 echo "Attempting npm install steps"
 cd ~/DevOpsBootcamp_Jenkins/app
-sudo apt-get install npm
+sudo apt-get install npm -y
 sudo npm install
 sudo npm install express
 echo "npm install run successfully"
