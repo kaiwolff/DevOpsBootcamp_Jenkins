@@ -29,14 +29,15 @@ sudo rm /etc/nginx/sites-available/default
 sudo cp ~/DevOpsBootcamp_Jenkins/default /etc/nginx/sites-available/default
 
 sudo service nginx restart
-#sudo systemctl enable nginx
+sudo systemctl enable nginx
 
 #node app/app/seeds/seed.js
 
 cd ~/DevOpsBootcamp_Jenkins/app
-node seeds/seed.js
 sudo npm install
 sudo npm install express
+node seeds/seed.js
+
 #seed the database
 
 
