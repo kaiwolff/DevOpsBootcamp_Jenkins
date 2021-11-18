@@ -48,3 +48,33 @@ To do this, this repo will gain a branch called `dev`, which we will get Jenkins
 We can then create a new job to merge the branches.
 
 `This code should be pushed to dev, but merged into main by Jenkins`
+
+
+# Summary of Jenkins CI/CD for the Node app
+
+- There are 3 jobs: The first one tests the app, the second one to merge the `dev` branch into `main`, and the third one to connect to an ec2 instance, install dependencies.
+- This should leave the app ready to be deployed by simply running `npm start` in the `DevOps_Bootcamp_Jenkins/app` folder
+
+## Pre-Jobs: preparing the github repo
+
+- Need a webhook to let Jenkins know that a push has occured
+
+- Also need to give jenkins permission to merge
+    - Do this with a deploy key. Select your github repo
+    - Then Settings &rarr; deploy keys
+    - Add deploy key
+
+## Job 1: CI-Test:
+
+- The aim of this job is to test whether node app runs
+
+
+
+
+## Job 2: CI-Merge
+- The setup is similar to the previous jobs
+- This job doesn't actually have any build steps
+- The action occurs in the post-build steps
+- There is an option in jenkins
+
+## Job 3 CD-Job
