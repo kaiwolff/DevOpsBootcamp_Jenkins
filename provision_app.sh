@@ -22,7 +22,8 @@ sudo apt-get upgrade -y
 
 sudo echo 'export DB_HOST="mongodb://52.48.235.46:27017/posts"' >> ~/.bashrc
 source ~/.bashrc
-
+echo "SOURCE COMMAND RUN"
+printenv DB_HOST
 #replace default of nginx. this hsoudl have been provisioned into /home/environment by Vagrant
 sudo rm /etc/nginx/sites-available/default
 sudo cp ~/DevOpsBootcamp_Jenkins/default /etc/nginx/sites-available/default
