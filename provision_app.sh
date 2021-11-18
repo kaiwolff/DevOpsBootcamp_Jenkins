@@ -33,10 +33,11 @@ sudo systemctl enable nginx
 
 echo "Attempting npm install steps"
 cd ~/DevOpsBootcamp_Jenkins/app
+sudo apt-get install npm
 sudo npm install
 sudo npm install express
 echo "npm install run successfully"
-node seeds/seed.js
+node ~/DevOpsBootcamp_Jenkins/app/seeds/seed.js
 
 #seed the database
 
