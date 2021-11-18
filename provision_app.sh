@@ -20,9 +20,8 @@ sudo apt-get upgrade -y
 #should now have all prerequisites installed, time to change directory to the app directory and run the npm commands to install and run the app
 #add new environment variable to bashrc and run source to reload it
 
-#sudo echo 'export DB_HOST="mongodb://172.31.45.234:27017/posts"' >> .bashrc
-#temporarily commented this part out until new db Ip available
-#source ~/.bashrc
+sudo echo 'export DB_HOST="mongodb://172.31.45.234:27017/posts"' >> .bashrc
+source ~/.bashrc
 
 #replace default of nginx. this hsoudl have been provisioned into /home/environment by Vagrant
 sudo rm /etc/nginx/sites-available/default
